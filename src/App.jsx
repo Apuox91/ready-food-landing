@@ -1,130 +1,90 @@
+import hero from './assets/hero.svg'
+import production from './assets/production.svg'
+import delivery from './assets/delivery.svg'
+
 export default function App() {
   return (
-    <div className="app">
+    <div>
       <section className="hero">
-        <div className="container">
-          <div className="hero-badge">
-            Производство готовой еды полного цикла
+        <div className="container hero-grid">
+          <div>
+            <h1 style={{fontSize:'52px',marginBottom:'20px'}}>
+              Современная фабрика-кухня и производство готовой еды
+            </h1>
+            <p style={{fontSize:'20px',lineHeight:'1.7',marginBottom:'30px'}}>
+              Более 10 лет мы производим готовые обеды, кулинарию, выпечку и кондитерские изделия
+              для retail, корпоративного питания и ежедневного потребления.
+            </p>
+            <a className="button" href="#contact">Связаться с нами</a>
           </div>
+          <img src={hero} alt="Производство еды" />
+        </div>
+      </section>
 
-          <h1>
-            Современная фабрика-кухня и крупнейшее производство готовой еды
-          </h1>
-
-          <p className="hero-text">
-            Более 10 лет производим качественную готовую еду,
-            кулинарию, выпечку и кондитерские изделия
-            для retail-сетей, кафе и корпоративных клиентов.
-          </p>
-
-          <div className="hero-buttons">
-            <a href="#contact" className="primary-btn">
-              Связаться с нами
-            </a>
-
-            <a href="#about" className="secondary-btn">
-              О производстве
-            </a>
+      <section className="section">
+        <div className="container about-grid">
+          <img src={production} alt="Производство" />
+          <div>
+            <h2 style={{fontSize:'40px'}}>О производстве</h2>
+            <p style={{fontSize:'18px',lineHeight:'1.8'}}>
+              Наше производство площадью 1200 м² ежедневно выпускает более 3500 кг качественной продукции.
+              В команде работают 250 профессионалов, а доставка осуществляется собственным транспортом с рефрижераторами.
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="stats">
-        <div className="container stats-grid">
-          <div className="card">
-            <h3>7000+</h3>
-            <p>Домохозяйств ежедневно</p>
-          </div>
-
-          <div className="card">
-            <h3>3500 кг</h3>
-            <p>Продукции ежедневно</p>
-          </div>
-
-          <div className="card">
-            <h3>250</h3>
-            <p>Сотрудников в команде</p>
-          </div>
-
-          <div className="card">
-            <h3>24</h3>
-            <p>Фирменных кафе-кулинарии</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" className="about">
+      <section className="section">
         <div className="container">
-          <h2>О производстве</h2>
-
-          <p>
-            Наше предприятие — это современное производство
-            площадью 1200 м² и команда из 250 профессионалов.
-          </p>
-
-          <p>
-            Ежедневно мы производим более 3500 кг качественной продукции:
-            готовые обеды, кулинарию, выпечку, кондитерские изделия и начинки.
-          </p>
-
-          <div className="features">
-            <div className="feature-card">Готовые обеды</div>
-            <div className="feature-card">Кулинария</div>
-            <div className="feature-card">Выпечка</div>
-            <div className="feature-card">Кондитерские изделия</div>
-            <div className="feature-card">Начинки</div>
-            <div className="feature-card">Более 100 SKU</div>
-          </div>
-        </div>
-      </section>
-
-      <section className="cooperation">
-        <div className="container">
-          <h2>Сотрудничество</h2>
-
-          <div className="cooperation-grid">
+          <h2 style={{fontSize:'40px',marginBottom:'30px'}}>Почему выбирают нас</h2>
+          <div className="cards">
             <div className="card">
-              <h3>Корпоративное питание</h3>
-              <p>
-                Организация питания сотрудников и поставки
-                корпоративных обедов.
-              </p>
+              <h3>7000+ домохозяйств</h3>
+              <p>Ежедневно доверяют нашей готовой еде.</p>
             </div>
-
             <div className="card">
-              <h3>Retail и магазины</h3>
-              <p>
-                Поставки готовой еды и кулинарии
-                для дальнейшей реализации.
-              </p>
+              <h3>24 кафе-кулинарии</h3>
+              <p>Крупнейшая сеть во Владимирской области.</p>
             </div>
-
             <div className="card">
-              <h3>Кафе и кофейни</h3>
-              <p>
-                Надежный поставщик выпечки,
-                кулинарии и готовых блюд.
-              </p>
+              <h3>100+ наименований</h3>
+              <p>Кулинария, выпечка, кондитерские изделия и начинки.</p>
+            </div>
+            <div className="card">
+              <h3>Без антибиотиков</h3>
+              <p>Современные стандарты качества и упаковка в газовой среде.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" className="contact">
-        <div className="container">
-          <h2>Обсудим сотрудничество</h2>
+      <section className="section">
+        <div className="container about-grid">
+          <div>
+            <h2 style={{fontSize:'40px'}}>Приглашаем к сотрудничеству</h2>
+            <p style={{fontSize:'18px',lineHeight:'1.8'}}>
+              Мы открыты к сотрудничеству с компаниями, которым требуется организация питания сотрудников,
+              корпоративные обеды, а также поставки готовой еды для магазинов, кафе и retail-сетей.
+            </p>
+          </div>
+          <img src={delivery} alt="Доставка" />
+        </div>
+      </section>
 
-          <p>
-            Свяжитесь с нами для обсуждения поставок и организации питания.
+      <section className="section contact" id="contact">
+        <div className="container">
+          <h2 style={{fontSize:'42px'}}>Связаться с нами</h2>
+          <p style={{fontSize:'20px'}}>
+            Обсудим сотрудничество и поставки готовой еды
           </p>
 
           <div className="contact-buttons">
-            <a href="tel:+79999999999" className="primary-btn">
-              Позвонить
+            <a className="call" href="tel:+79106733767">
+              +7 (910) 673-37-67
             </a>
 
-            <a href="mailto:info@company.ru" className="secondary-btn dark">
-              Написать на почту
+            <a className="mail" href="mailto:beriobed2025@gmail.com">
+              beriobed2025@gmail.com
             </a>
           </div>
         </div>
