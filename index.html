@@ -317,7 +317,132 @@
         font-size: 38px;
       }
     }
-  </style>
+  @media screen and (max-width: 768px) {
+
+body{
+overflow-x:hidden;
+}
+
+header{
+padding:16px 12px;
+flex-direction:column;
+gap:14px;
+}
+
+.logo{
+font-size:20px;
+text-align:center;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
+nav a{
+font-size:15px;
+}
+
+.hero{
+padding:140px 20px 80px;
+min-height:auto;
+background-position:center;
+background-size:cover;
+text-align:center;
+}
+
+.hero-content{
+max-width:100%;
+padding:0;
+}
+
+.hero h1{
+font-size:44px;
+line-height:1;
+margin-bottom:24px;
+word-break:break-word;
+}
+
+.hero p{
+font-size:20px;
+line-height:1.5;
+padding:0 5px;
+}
+
+.btn{
+width:100%;
+display:block;
+margin-bottom:16px;
+padding:18px;
+font-size:20px;
+}
+
+section{
+padding:60px 20px;
+}
+
+.section-title{
+font-size:34px;
+line-height:1.1;
+margin-bottom:40px;
+}
+
+.about{
+grid-template-columns:1fr;
+gap:30px;
+}
+
+.about-text p{
+font-size:17px;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+.stat-card{
+padding:28px;
+}
+
+.features-grid{
+grid-template-columns:1fr;
+}
+
+.feature-card img{
+height:220px;
+object-fit:cover;
+}
+
+.cta{
+padding:70px 20px;
+margin:40px 20px;
+}
+
+.cta h2{
+font-size:38px;
+line-height:1.1;
+}
+
+.cta p{
+font-size:18px;
+}
+
+footer{
+padding:50px 20px;
+text-align:center;
+}
+
+img{
+max-width:100%;
+height:auto;
+display:block;
+}
+
+}
+
+</style>
 </head>
 <body>
 
