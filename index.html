@@ -1,12 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Производство готовой еды</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фабрика еды</title>
+<style>
+body {
+    margin:0;
+    background:#111;
+    color:#fff;
+    font-family:Arial,sans-serif;
+}
+.hero {
+    width:100%;
+}
+.hero img {
+    width:100%;
+    display:block;
+}
+.contacts {
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#7CB518;
+    padding:16px 24px;
+    border-radius:14px;
+    color:#fff;
+    font-weight:bold;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+</style>
+</head>
+<body>
+<div class="hero">
+    <img src="./assets/landing-preview.png" alt="Фабрика еды">
+</div>
+
+<div class="contacts">
+    📞 +7 910 673-37-67<br>
+    ✉️ beriobed2025@gmail.com
+</div>
+</body>
 </html>
